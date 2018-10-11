@@ -1,0 +1,12 @@
+version: '3'
+services:
+  demo-config-server:
+    image: quki09/demo-config-server
+    environment:
+      TZ: Asia/Seoul
+    ports:
+      - 8888:8888
+    logging:
+      options:
+        max-size: "512k"
+        max-file: "2"
